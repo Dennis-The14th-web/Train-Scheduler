@@ -7,15 +7,14 @@
     <title>Train Scheduler</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-
 </head>
 <body>
     
     <div class="container">
         <div class="jumbotron">
-            
             <h1 class="text-center">INSTANT <img class="logo" src="./assets/images/train main logo.PNG"> SCHEDULER</h1>
         </div>
+
         <div class="panel panel-default">
             <div class="panel-heading text-center">
                 <h2 id="currentTime"> CURRENT TIME: </h2>
@@ -26,7 +25,8 @@
             <div class="panel-heading">
                 <h3 class="panel-title text-center">Current Train Schedule</h3>
             </div>
-        </div>    
+        </div> 
+
         <div class="table-responsive-ms">
             <table id="trainTable">
                 <tr>
@@ -39,11 +39,11 @@
             </table>
         </div>
         <br>
-        
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">Add Train</h4>
             </div>
+
             <div class="panel-body form-group">
                 <form>
                     <label for="trainNameInput">Train Name</label>
@@ -54,6 +54,7 @@
                     <input type="text" class="form-control" name="trDest" id="destinationInput" placeholder="Atlanta, GA" required>
                     <br>
                 </form>
+
                 <form class="form-inline">
                     <label for="firstTrainInput">First Train Time</label>
                     <input type="number" class="form-control mx-sm-3  mb-2" name="trTime" id="firstTrainInput" placeholder="eg. 1759" onkeyup="if(this.value > 2400){this.value=''; alert('Enter a valid time between 0000 and 2400');}">
@@ -63,18 +64,16 @@
                     </form>
                 </div>
             </div>
+        </div>
     </div>
-    </div>
-            <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
 
-            <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
-            <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
-            <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
 
-            <script type="text/javascript" src="./assets/javascript/app.js"></script>
-          
-
-           
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
+                     
 </body>
 </html>
