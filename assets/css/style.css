@@ -5,20 +5,32 @@
     margin-bottom: 20px;
 }
 
+body{
+    background-color: #ebebeb;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: #ffffff;
+}
+
 h1{
     color: #83833e;
+    font-weight: bolder;
 }
 
 .logo{
     width: 150px;
 }
 
-.text-center{
-    font-size: 40px;
+.panel-title{
+    font-size: 15px;
+    font-weight: bolder;
 }
 
 #currentTime{
-    font-size: 20px;
+    font-size: 30px;
     color: #34a64d;
 }
 
@@ -29,13 +41,13 @@ h3{
 #trainTable {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 100%; 
 }
 
 #trainTable td,
 #trainTable th {
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 10px; 
 }
 
 #trainTable tr:nth-child(even) {

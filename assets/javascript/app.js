@@ -22,7 +22,7 @@ $("#addTrainButton").on("click", function() {
     // Gets user input
     var trainName = $("#trainNameInput").val().trim();
     var destination = $("#destinationInput").val().trim();
-    var firstTrain = moment($("#firstTrainInput").val().trim(), "HH:mm").subtract(1, "years").format("HH:mm");
+    var firstTrain = moment($("#firstTrainInput").val().trim(), "HH:mm").subtract(10, "years").format("x");
     var frequency = $("#frequencyInput").val().trim();
 
     // Creates local "temporary" object for holding train data
@@ -34,7 +34,7 @@ $("#addTrainButton").on("click", function() {
     }
 
     // Updates train data to the database
-    trainData.push(newTrain);
+    trainDB.push(newTrain);
 
     // Shows additional train notification
     alert(newTrain.name + " has been successfully added");
@@ -64,7 +64,7 @@ trainDB.on("child_added", function(childSnapshot) {
     let tMinutes = trainFrequency - tRemainder;
 
     // To calculate the arrival time, add the tMinutes to the currrent time
-    let tArrival = moment().add(tMinutes, "m").format("hh:mm A");
+    let tArrival = moment().add(tMinutes, "m").format("HH:mm");
 
     // Add each train's data into the table 
     $("#trainTable > tbody").append("<tr><td>" + trainNames + "</td><td>" + trainDestin + "</td><td class='min'>" + trainFrequency + "</td><td class='min'>" + tArrival + "</td><td class='min'>" + tMinutes + "</td></tr>");
