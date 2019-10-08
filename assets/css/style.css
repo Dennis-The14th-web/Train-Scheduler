@@ -15,9 +15,10 @@ body{
     background-color: #ffffff;
 }
 
-h1{
-    color: #83833e;
+.jumbotron h1{
+    color:#83833e;
     font-weight: bolder;
+    text-decoration: underline;
 }
 
 .logo{
@@ -32,10 +33,6 @@ h1{
 #currentTime{
     font-size: 30px;
     color: #34a64d;
-}
-
-h3{
-    color: #83833e;
 }
 
 #trainTable {
@@ -74,3 +71,4 @@ h3{
 #trainTable #times {
     text-align: center;
 }
+        

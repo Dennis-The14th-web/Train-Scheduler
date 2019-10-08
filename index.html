@@ -15,13 +15,13 @@
             <h1 class="text-center">INSTANT <img class="logo" src="./assets/images/train main logo.PNG"> SCHEDULER</h1>
         </div>
 
-        <div class="panel panel-default">
+        <div class="panel panel-success">
             <div class="panel-heading text-center">
                 <h2 id="currentTime"> CURRENT TIME: </h2>
             </div>
         </div>
 
-        <div class="panel panel-default">
+        <div class="panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title text-center">Current Train Schedule</h3>
             </div>
@@ -33,13 +33,13 @@
                     <th> Train Name</th>
                     <th> Destination</th>
                     <th>Frequency (min)</th>
-                    <th id="times">Next Arrival</th>
+                    <th id="times">Next Arrival<br><small> (24- hour clock)</small></th>
                     <th id="times">Minutes Away</th>
                 </tr>
             </table>
         </div>
         <br>
-        <div class="panel panel-default">
+        <div class="panel panel-primary">
             <div class="panel-heading">
                 <h4 class="panel-title">Add Train</h4>
             </div>
@@ -56,11 +56,11 @@
                 </form>
 
                 <form class="form-inline">
-                    <label for="firstTrainInput">First Train Time<small> (24- hour clock)</small></label>
+                    <label for="firstTrainInput">First Train Time<small> (HH:mm- military time)</small></label>
                     <input type="number" class="form-control mx-sm-3  mb-2" name="trTime" id="firstTrainInput" placeholder="eg. 1759" onkeyup="if(this.value > 2400){this.value=''; alert('Enter a valid time between 0000 and 2400');}">
                     <label>Frequency (min)</label>
                     <input type="number" class="form-control mx-sm-3 mb-2" name="trFrequency" id="frequencyInput" placeholder="30">
-                    <button id="addTrainButton" type="submit" class="btn btn-success">Submit</button>
+                    <button id="addTrainButton" type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
             </div>
