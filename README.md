@@ -22,19 +22,19 @@
   
     - Users from many different machines must be able to view same train times.
 
-  # Technolgies
+# Technolgies
 
-  - HTML5
+- HTML5
 
-  - CSS3
+- CSS3
 
-  - Bootstrap
+- Bootstrap
 
-  - javaScript / jQuery / Moment.js
+- javaScript / jQuery / Moment.js
 
-  - Firebase
-        * app
-            * database
+- Firebase
+    * app
+        * database
 
 # Instructions
 
