@@ -1,7 +1,10 @@
 .jumbotron {
     text-align: center;
-    background: #ffffff;
-    margin-top: 0;
+    background: url(../images/train\ image.png);
+    height: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: auto;
     margin-bottom: 20px;
 }
 
@@ -16,13 +19,14 @@ body{
 }
 
 .jumbotron h1{
-    color:#83833e;
+    color: #83833e;
     font-weight: bolder;
-    text-decoration: underline;
+    font-size: 50px;
+    text-decoration: underline; 
 }
 
 .logo{
-    width: 150px;
+    width: 100px;
 }
 
 .panel-title{
@@ -71,4 +75,3 @@ body{
 #trainTable #times {
     text-align: center;
 }
-        

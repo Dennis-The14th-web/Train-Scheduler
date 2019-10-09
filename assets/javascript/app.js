@@ -24,7 +24,7 @@ $("#addTrainButton").on("click", function() {
     var destination = $("#destinationInput").val().trim();
     var firstTrain = moment($("#firstTrainInput").val().trim(), "HH:mm").subtract(10, "years").format("x");
     var frequency = $("#frequencyInput").val().trim();
-
+    console.log(firstTrain);
     // Creates local "temporary" object for holding train data
     var newTrain = {
         name: trainName,
