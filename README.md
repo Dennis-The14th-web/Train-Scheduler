@@ -10,13 +10,13 @@
   
     - When adding trains, administrators should be able to submit the following:
     
-        * Train Name
+    * Train Name
     
-        * Destination 
+    * Destination 
     
-        * First Train Time -- in military time
+    * First Train Time -- in military time
     
-        * Frequency -- in minutes
+    * Frequency -- in minutes
   
     - Code this app to calculate when the next train will arrive; this should be relative to the current time.
   

@@ -1,6 +1,9 @@
 // Initialize Firebase
+var config = import("./keys")
+
+
 var config = {
-    apiKey: "AIzaSyDVbjiG3YZW3KjTSeneKPgxWn6gDP0Mr74",
+    apiKey: "process.env.API_KEY",
     authDomain: "train-scheduler-51bc5.firebaseapp.com",
     databaseURL: "https://train-scheduler-51bc5.firebaseio.com",
     projectId: "train-scheduler-51bc5",
@@ -13,6 +16,7 @@ var config = {
 firebase.initializeApp(config);
 
 var trainDB = firebase.database().ref();
+
 // Holds the current time
 $("#currentTime").append(moment().format("hh:mm A"));
 
@@ -72,7 +76,7 @@ trainDB.on("child_added", function(childSnapshot) {
     //  function displayTime() {
     //      $('#firstTrainInput').firstTrain({
     //          use24hours: true
-    //      });
+    //      }); 
     //  };
     //  displayTime();
 });

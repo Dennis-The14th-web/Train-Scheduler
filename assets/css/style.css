@@ -1,5 +1,4 @@
 .jumbotron {
-    text-align: center;
     background: url(../images/train\ image.png);
     height: 100%;
     background-position: right;
@@ -19,6 +18,7 @@ body{
 }
 
 .jumbotron h1{
+    text-align: left;
     color: #83833e;
     font-weight: bolder;
     font-size: 50px;
