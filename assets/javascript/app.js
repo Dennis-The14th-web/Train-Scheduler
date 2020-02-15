@@ -72,12 +72,5 @@ trainDB.on("child_added", function(childSnapshot) {
 
     // Add each train's data into the table 
     $("#trainTable > tbody").append("<tr><td>" + trainNames + "</td><td>" + trainDestin + "</td><td class='min'>" + trainFrequency + "</td><td class='min'>" + tArrival + "</td><td class='min'>" + tMinutes + "</td></tr>");
-
-    //  function displayTime() {
-    //      $('#firstTrainInput').firstTrain({
-    //          use24hours: true
-    //      }); 
-    //  };
-    //  displayTime();
 });
 
