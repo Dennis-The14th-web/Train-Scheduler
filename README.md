@@ -4,7 +4,7 @@
 
 - Providing up-to-date information about various trains, namely their arrival times and how many minutes remain until they arrive at their station.
 
-# Requirment
+## Requirment
 
 - Make sure that your app suits this basic spec:
   
@@ -22,7 +22,7 @@
   
     - Users from many different machines must be able to view same train times.
 
-# Technolgies
+## Technolgies
 
 - HTML5
 
@@ -36,13 +36,11 @@
     * app
     * database
 
-# Instructions
+## Instructions
 
 Browse the site for existing train information. If you do not see a train and have updated information, please use in the "Add Train" form below the "Current Train Schedule." When adding information on a new train, enter in the train ,name, destination, the time of the first train in (HH:mm- military time), and the frequency in which it arrives in (minutes). The "Next Arrival" and "Minutes Away" fields will automatically be calculated after entering in the previous information.
 
-# Acknowledgments
+## App view
 
-- Georgia Tech Bootcamp
-
-- Anytime is Train Time Choo Choo. Chee Chee.
+<a href="https://dennis-the14th-web.github.io/Train-Scheduler/"><img src="assets/images/instant train.PNG"></a>
   
