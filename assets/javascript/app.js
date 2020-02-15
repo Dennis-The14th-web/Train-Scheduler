@@ -1,7 +1,6 @@
 // Initialize Firebase
 var config = import("./keys")
 
-
 var config = {
     apiKey: "process.env.API_KEY",
     authDomain: "train-scheduler-51bc5.firebaseapp.com",
