@@ -2,7 +2,7 @@
 
 - Instant Scheduler is a train scheduler application that incorporates Firebase to host arrival and departure data.
 
-- Providing up-to-date information about various trains, namely their arrival times and how many minutes rmain until they arrive at their station.
+- Providing up-to-date information about various trains, namely their arrival times and how many minutes remain until they arrive at their station.
 
 # Requirment
 
